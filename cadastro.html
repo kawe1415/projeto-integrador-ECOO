@@ -1,47 +1,252 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eco – Criar Conta</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ECO - Notícias Ambientais</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<main class="login">
-  <div class="login-logo"><span>🍃</span> ECO</div>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
 
-  <form class="login-card" action="#" method="post">
-    <div class="campo">
-      <label for="email">Email :</label>
-      <div class="entrada">
-        <span aria-hidden="true">✉</span>
-        <input id="email" type="email" placeholder="seu@email.com" required>
-      </div>
-    </div>
+        <button class="menu" aria-label="Abrir menu">
+            ☰
+        </button>
 
-    <div class="campo">
-      <label for="senha">Senha :</label>
-      <div class="entrada">
-        <span aria-hidden="true">🔒</span>
-        <input id="senha" type="password" placeholder="Digite sua senha" required>
-      </div>
-    </div>
+        <a href="index.html" class="logo">
+            <span class="logo-icone">◉</span>
+            ECO
+        </a>
 
-    <div class="campo">
-      <label for="confirmar-senha">Confirmar Senha :</label>
-      <div class="entrada">
-        <span aria-hidden="true">🔒</span>
-        <input id="confirmar-senha" type="password" placeholder="Digite sua senha novamente" required>
-      </div>
-    </div>
+        <a href="#" class="pesquisa" aria-label="Pesquisar">
+            ⌕
+        </a>
 
-    <button class="btn-login claro" type="submit">Criar Conta</button>
-    <a class="btn-login escuro" href="login.html">Já tenho uma conta</a>
-  </form>
+    </header>
 
-  <a class="voltar" href="index.html" aria-label="Voltar">←</a>
-</main>
+
+    <!-- DESTAQUE PRINCIPAL -->
+    <section class="destaque">
+
+        <div class="destaque-conteudo">
+
+            <p class="subtitulo">
+                🍃 Informação que preserva
+            </p>
+
+            <h1>
+                NOTÍCIAS<br>
+                <span>RECENTES</span>
+            </h1>
+
+            <p class="descricao-destaque">
+                Acompanhe as principais notícias sobre meio ambiente,
+                sustentabilidade e o futuro do nosso planeta.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LISTA DE NOTÍCIAS -->
+    <main class="noticias">
+
+        <!-- NOTÍCIA 1 -->
+        <article class="card-noticia">
+
+            <div class="imagem-noticia">
+<img src="IMG/meio-ambiente.jpg" alt="">            </div>
+
+            <div class="conteudo-noticia">
+
+                <span class="categoria">
+                    CIDADES
+                </span>
+
+                <h2>
+                    Cidades investem em preservação de rios e nascentes
+                </h2>
+
+                <p>
+                    Projetos de recuperação de matas ciliares e limpeza
+                    de rios ganham força em várias regiões do país,
+                    com o objetivo de garantir água limpa e segurança
+                    para as próximas gerações.
+                </p>
+
+                <a href="#" class="ler-mais">
+                    ◷  LEIA A NOTÍCIA COMPLETA →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- NOTÍCIA 2 -->
+        <article class="card-noticia">
+
+            <div class="imagem-noticia">
+                <!-- COLOQUE A IMAGEM AQUI DEPOIS -->
+            </div>
+
+            <div class="conteudo-noticia">
+
+                <span class="categoria">
+                    NATUREZA
+                </span>
+
+                <h2>
+                    Mudanças climáticas aceleram eventos extremos no país
+                </h2>
+
+                <p>
+                    Especialistas alertam para o aumento da frequência
+                    e intensidade de secas, enchentes e incêndios
+                    florestais, que já afetam diversas regiões
+                    do Brasil e exigem ações urgentes.
+                </p>
+
+                <a href="#" class="ler-mais">
+                    ◷  LEIA A NOTÍCIA COMPLETA →
+                </a>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- CHAMADA PARA AÇÃO -->
+    <section class="chamada">
+
+        <div class="chamada-conteudo">
+
+            <p class="chamada-subtitulo">
+                JUNTOS POR UM
+            </p>
+
+            <h2>
+                PLANETA MELHOR
+            </h2>
+
+            <p>
+                Informação, conscientização e ação<br>
+                para um futuro mais sustentável.
+            </p>
+
+        </div>
+
+        <div class="chamada-botoes">
+
+            <a href="cadastro.html" class="botao-inscrever">
+                INSCREVER
+            </a>
+
+            <a href="#" class="botao-saiba">
+                SAIBA MAIS →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="rodape-principal">
+
+            <div class="rodape-logo">
+
+                <div class="logo-rodape">
+                    <span>◉</span> ECO
+                </div>
+
+                <p>
+                    Um site dedicado à informação<br>
+                    e à conscientização ambiental.
+                </p>
+
+                <div class="redes-sociais">
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="X">𝕏</a>
+                    <a href="#" aria-label="Facebook">●</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                </div>
+
+            </div>
+
+
+            <div class="rodape-links">
+
+                <h3>NAVEGAÇÃO</h3>
+
+                <a href="index.html">Início</a>
+                <a href="#">Categorias</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Contato</a>
+
+            </div>
+
+
+            <div class="rodape-links">
+
+                <h3>CATEGORIAS</h3>
+
+                <a href="#">Meio Ambiente</a>
+                <a href="#">Clima</a>
+                <a href="#">Biodiversidade</a>
+                <a href="#">Sustentabilidade</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ÁREA DE INSCRIÇÃO -->
+        <div class="inscricao">
+
+            <p>
+                🍃 Receba nossas atualizações
+            </p>
+
+            <form class="form-inscricao">
+
+                <input
+                    type="email"
+                    aria-label="Seu e-mail"
+                    placeholder="Digite seu e-mail"
+                >
+
+                <button type="submit" aria-label="Inscrever-se">
+                    →
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="direitos">
+            © 2026 Eco-Planeta. Todos os direitos reservados.
+        </div>
+
+
+        <a href="#" class="voltar-topo" aria-label="Voltar ao topo">
+            ↑
+        </a>
+
+    </footer>
 
 </body>
+
 </html>
