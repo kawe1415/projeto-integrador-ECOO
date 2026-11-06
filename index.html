@@ -1,142 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eco – Notícias Recentes</title>
-<link rel="stylesheet" href="Index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Eco – Notícias Recentes</title>
+  <link rel="stylesheet" href="Index.css">
 </head>
+
 <body>
 
-<header>
-  <button aria-label="Menu">☰</button>
-  <div class="logo"><span><img src="IMG/LogoEco.jpg" alt="LogoEco" width="50"></span> ECO</div>
-  <nav class="menu-pc">
-    <a class="ativo" href="#">Início</a>
-    <a href="categorias.html">Categorias</a>
-    <a href="sobre.html">Sobre nós</a>
-    <a href="#">Contato</a>
-  </nav>
-  <button aria-label="Buscar">🔍</button>
-</header>
-
-<style>
-  .historia {
-    margin: 24px 14px;
-    padding: 18px;
-    background: #1b3a1a;
-    border: 1px solid #3f7a2e;
-    border-left: 5px solid #6fdc3a;
-    border-radius: 12px;
-    color: #ffffff;
-    font-family: "Segoe UI", Arial, sans-serif;
-  }
-  .historia small { color: #6fdc3a; font-style: italic; font-weight: 700; }
-  .historia h2 { font-size: 20px; margin: 4px 0 8px; }
-  .historia p { font-size: 13px; line-height: 1.5; color: #c9d8c5; }
-  .historia a { display: inline-block; margin-top: 12px; color: #6fdc3a; font-weight: 700; font-size: 13px; text-decoration: none; }
-  .historia a:hover { text-decoration: underline; }
-  @media (min-width: 900px) {
-    .historia { max-width: 1100px; margin: 40px auto; padding: 28px 32px; }
-    .historia h2 { font-size: 28px; }
-    .historia p { font-size: 16px; }
-  }
-</style>
-
-<section class="historia">
-  <small>🍃 NOSSA HISTÓRIA</small>
-  <h2>Como o Eco surgiu</h2>
-  <p>
-    O Eco nasceu de um projeto em grupo, com uma ideia simples: tornar a
-    informação ambiental mais clara e próxima das pessoas. O que começou
-    como um trabalho escolar virou um espaço para falar de clima,
-    biodiversidade e sustentabilidade.
-  </p>
-  <a href="sobre.html">Conheça mais sobre nós →</a>
-</section>
-
-<section class="hero">
-  <em> Informação que preserva</em>
-  <h1>NOTÍCIAS <b>RECENTES</b></h1>
-  <p>Acompanhe as principais novidades sobre meio ambiente, sustentabilidade e o futuro do nosso planeta.</p>
-</section>
-
-<main class="noticias">
-  <article class="noticia">
-    <div class="foto rio">
-      <img src="IMG/Imagem1.jpg" alt="Rio e natureza" width="500">
-    </div>
-    <div>
-      <span class="tag">CIDADES</span>
-      <h2>Cidades investem em preservação de rios e nascentes</h2>
-      <p>Projetos de recuperação de matas ciliares e limpeza de rios ganham força em várias regiões do país, com o objetivo de garantir água limpa às próximas gerações.</p>
-      <time>28 de agosto de 2026</time>
-    </div>
-  </article>
-
-  <article class="noticia">
-    <div class="foto fogo">
-      <img src="IMG/2270836f-87b8-4608-9b01-dda32c06513b.jpg" alt="Incêndio florestal" width="500">
-    </div>
-    <div>
-      <span class="tag">NATUREZA</span>
-      <h2>Mudanças climáticas aceleram eventos extremos no país</h2>
-      <p>Especialistas alertam para o aumento da frequência e intensidade de secas, enchentes e incêndios florestais, que já afetam diversas regiões do Brasil.</p>
-      <time>27 de agosto de 2026</time>
-    </div>
-  </article>
-</main>
-
-<section class="chamada">
-  <div>
-    <small>JUNTOS POR UM</small>
-    <h2>PLANETA MELHOR</h2>
-    <p>Informação, conscientização e ação para um futuro mais sustentável.</p>
-  </div>
-  <div class="botoes">
-    <a class="btn cheio" href="login.html">INSCREVER</a>
-    <a class="btn vazio" href="#">SAIBA MAIS</a>
-  </div>
-</section>
-
-<footer>
-  <div class="colunas">
-    <div>
-      <div class="logo"><span>🍃</span> ECO</div>
-      <p>Um site dedicado à informação e à conscientização ambiental.</p>
-    </div>
-    <nav>
-      <h3>NAVEGAÇÃO</h3>
-      <ul>
-        <li class="ativo"><a href="index.html">Início</a></li>
-        <li><a href="categorias.html">Categorias</a></li>
-        <li><a href="sobre.html">Sobre nós</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+  <header>
+    <button aria-label="Menu">☰</button>
+    <div class="logo"><span><img src="IMG/LogoEco.jpg" alt="LogoEco" width="50"></span> ECO</div>
+    <nav class="menu-pc">
+      <a class="ativo" href="#">Início</a>
+      <a href="categorias.html">Categorias</a>
+      <a href="sobre.html">Sobre nós</a>
+      
     </nav>
-    <nav>
-      <h3>CATEGORIAS</h3>
-      <ul>
-        <li><a href="#">Meio Ambiente</a></li>
-        <li><a href="clima.html">Clima</a></li>
-        <li><a href="#">Biodiversidade</a></li>
-        <li><a href="#">Sustentabilidade</a></li>
-      </ul>
-    </nav>
-  </div>
+    <button aria-label="Buscar"><img src="IMG/Icone-pesquisa.jpg" </button>
+  </header>
 
-  <div class="sociais">
-    <a href="#" aria-label="Instagram">📷</a>
-    <a href="#" aria-label="X">✖</a>
-    <a href="#" aria-label="Facebook">📘</a>
-    <a href="#" aria-label="YouTube">▶</a>
-  </div>
+  <style>
+    
+  </style>
 
-  <label class="rotulo" for="email">🍃 Receba nossas atualizações</label>
-  <input id="email" type="email" placeholder="Seu e-mail">
+  <section class="historia">
+    <small> NOSSA HISTÓRIA</small>
+    <h2>Como o Eco surgiu</h2>
+    <p>
+      O Eco nasceu de um projeto em grupo, com uma ideia simples: tornar a
+      informação ambiental mais clara e próxima das pessoas. O que começou
+      como um trabalho escolar virou um espaço para falar de clima,
+      biodiversidade e sustentabilidade.
+    </p>
+    <a href="sobre.html">Conheça mais sobre nós →</a>
+  </section>
 
-  <p class="copy">© 2026 Eco Futuro. Todos os direitos reservados.</p>
-</footer>
+  <section class="hero">
+    <em> Informação que preserva</em>
+    <h1>NOTÍCIAS <b>RECENTES</b></h1>
+    <p>Acompanhe as principais novidades sobre meio ambiente, sustentabilidade e o futuro do nosso planeta.</p>
+  </section>
+
+  <main class="noticias">
+    <article class="noticia">
+      <div class="foto rio">
+        <img src="IMG/Imagem1.jpg" alt="Rio e natureza" width="500">
+      </div>
+      <div>
+        <span class="tag">CIDADES</span>
+        <h2>Cidades investem em preservação de rios e nascentes</h2>
+        <p>Projetos de recuperação de matas ciliares e limpeza de rios ganham força em várias regiões do país, com o
+          objetivo de garantir água limpa às próximas gerações.</p>
+        <time>28 de agosto de 2026</time>
+      </div>
+    </article>
+
+    <article class="noticia">
+      <div class="foto fogo">
+        <img src="IMG/2270836f-87b8-4608-9b01-dda32c06513b.jpg" alt="Incêndio florestal" width="500">
+      </div>
+      <div>
+        <span class="tag">NATUREZA</span>
+        <h2>Mudanças climáticas aceleram eventos extremos no país</h2>
+        <p>Especialistas alertam para o aumento da frequência e intensidade de secas, enchentes e incêndios florestais,
+          que já afetam diversas regiões do Brasil.</p>
+        <time>27 de agosto de 2026</time>
+      </div>
+    </article>
+  </main>
+
+  <section class="chamada">
+    <div>
+      <small>JUNTOS POR UM</small>
+      <h2>PLANETA MELHOR</h2>
+      <p>Informação, conscientização e ação para um futuro mais sustentável.</p>
+    </div>
+    <div class="botoes">
+      <a class="btn cheio" href="login.html">INSCREVER</a>
+      <a class="btn vazio" href="#">SAIBA MAIS</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="colunas">
+      <div>
+        <div class="logo"><span><img src="IMG/LogoEco.jpg" width="50" </span> ECO</div>
+        <p>Um site dedicado à informação e à conscientização ambiental.</p>
+      </div>
+      <nav>
+        <h3>NAVEGAÇÃO</h3>
+        <ul>
+          <li class="ativo"><a href="index.html">Início</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+
+        </ul>
+      </nav>
+      <nav>
+        <h3>CATEGORIAS</h3>
+        <ul>
+          <li><a href="#">Meio Ambiente</a></li>
+          <li><a href="clima.html">Clima</a></li>
+          <li><a href="biodiversidade.html">Biodiversidade</a></li>
+          <li><a href="#">Sustentabilidade</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sociais">
+      <a href="#" aria-label="Instagram"><img src="IMG/Insta-verde.png"</a>
+      <a href="#" aria-label="X"><img src="IMG/x.jpg" alt=""></a>
+      <a href="#" aria-label="Facebook"><img src="IMG/Faceboook.jpg"</a>
+      <a href="#" aria-label="YouTube"><img src="IMG/You-tube.jpg"</a>
+    </div>
+
+    <label class="rotulo" for="email"> Receba nossas atualizações</label>
+    <input id="email" type="email" placeholder="Seu e-mail">
+
+    <p class="copy">© 2026 Eco Futuro. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
+
 </html>
