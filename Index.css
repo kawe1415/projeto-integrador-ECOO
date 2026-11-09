@@ -245,17 +245,15 @@ header button:active {
   line-height: 1.8;
 }
 
-/* ========================================
-   CARDS DAS NOTÍCIAS
-======================================== */
+/* CARDS DAS NOTÍCIAS */
 
 .noticias {
-  width: 86%;
+  width: 100%;
   max-width: 1120px;
-  margin: 0 auto 65px;
+  margin: 0 auto 90px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
+  gap: 100px;
 }
 
 .noticia {
@@ -303,7 +301,7 @@ header button:active {
 .tag {
   display: inline-block;
   margin-bottom: 12px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border-radius: 6px;
   background: var(--verde-claro);
   color: var(--verde-medio);
@@ -312,7 +310,9 @@ header button:active {
   letter-spacing: 1px;
 }
 
+/*Cidades investem dentro do card*/
 .noticia h2 {
+  padding: 15px;
   margin-bottom: 12px;
   color: var(--verde-escuro);
   font-size: 21px;
@@ -334,9 +334,7 @@ header button:active {
   font-size: 12px;
 }
 
-/* ========================================
-   CHAMADA PLANETA MELHOR
-======================================== */
+/* CHAMADA PLANETA MELHOR */
 
 .chamada {
   width: 86%;
@@ -376,9 +374,7 @@ header button:active {
   font-size: 14px;
 }
 
-/* ========================================
-   BOTÕES
-======================================== */
+/* BOTÕES */
 
 .botoes {
   display: flex;
@@ -440,9 +436,7 @@ header button:active {
   transform: scale(0.97);
 }
 
-/* ========================================
-   RODAPÉ
-======================================== */
+/* RODAPÉ */
 
 footer {
   padding: 48px 7% 22px;
@@ -532,9 +526,7 @@ footer li a:hover {
   transform: translateY(-4px);
 }
 
-/* ========================================
-   CAMPO DE E-MAIL
-======================================== */
+/* CAMPO DE E-MAIL */
 
 .rotulo {
   display: block;
@@ -570,9 +562,7 @@ footer li a:hover {
   box-shadow: 0 0 0 3px rgba(139, 224, 78, 0.1);
 }
 
-/* ========================================
-   DIREITOS AUTORAIS
-======================================== */
+/* DIREITOS AUTORAIS */
 
 .copy {
   max-width: 1120px;
@@ -584,9 +574,7 @@ footer li a:hover {
   text-align: center;
 }
 
-/* ========================================
-   RESPONSIVIDADE
-======================================== */
+/*RESPONSIVIDADE*/
 
 @media (max-width: 850px) {
   header {
@@ -724,16 +712,5 @@ footer li a:hover {
 
   #email {
     max-width: 100%;
-  }
-}
-
-/* MENOS ANIMAÇÕES PARA QUEM PREFERIR */
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
   }
 }
