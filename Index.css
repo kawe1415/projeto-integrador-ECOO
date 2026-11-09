@@ -245,9 +245,10 @@ header button:active {
   line-height: 1.8;
 }
 
-/* CARDS DAS NOTÍCIAS */
+/* CARDS DA NATUREZA dentro do card */
 
 .noticias {
+  padding: 15px;
   width: 100%;
   max-width: 1120px;
   margin: 0 auto 90px;
@@ -256,7 +257,9 @@ header button:active {
   gap: 100px;
 }
 
+/*Texto Natureza*/
 .noticia {
+  padding: 10px;
   min-width: 0;
   overflow: hidden;
   background: #ffffff;
@@ -319,14 +322,18 @@ header button:active {
   line-height: 1.45;
 }
 
+/*Texto cidades investem*/
 .noticia p {
-  margin-bottom: 18px;
+  padding: 10px;
+  margin-bottom: 25px;
   color: var(--texto-suave);
   font-size: 14px;
   line-height: 1.8;
 }
 
+/*Texto cidades investem - dia*/
 .noticia time {
+  padding: 15px;
   display: block;
   padding-top: 14px;
   border-top: 1px solid var(--borda);
