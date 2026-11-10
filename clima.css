@@ -12,15 +12,91 @@ body {
     color: #333;
 }
 
+
 /* CABEÇALHO */
 header {
-    background-color: #245b36;
-    color: white;
-    padding: 15px 40px;
+    background-color: #ffffff;
+    color: #123c25;
+    width: 100%;
+    height: 80px;
+    padding: 0 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
 }
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #123c25;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/* MENU */
+header button:first-of-type,
+header button:last-of-type {
+    width: 43px;
+    height: 43px;
+    background-color: #f7f6f4;
+    border: 1px solid #e1e6df;
+    border-radius: 13px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* LINKS */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #26352b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #62b500;
+}
+
+/* PESQUISA */
+header button:last-of-type {
+    color: #245b36;
+    border-color: #e1e6df;
+}
+
+/* CABEÇALHO NO CELULAR */
+@media (max-width: 768px) {
+    header {
+        padding: 0 15px;
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
+
 
 .logo {
     display: flex;
@@ -41,13 +117,7 @@ nav a {
     font-size: 16px;
 }
 
-/* TÍTULO DA PÁGINA */
-.titulo-pagina {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #245b36;
-    color: white;
-}
+
 
 .titulo-pagina h1 {
     font-size: 35px;
@@ -126,14 +196,6 @@ nav a {
     color: white;
 }
 
-/* RODAPÉ */
-footer {
-    background-color: #245b36;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
@@ -159,6 +221,238 @@ footer {
         height: 220px;
     }
 
-    .titulo-pagina h1 {
-        font-size: 28px;
+  
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+header {
+  min-height: 78px;
+  padding: 14px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--borda);
+  box-shadow: 0 3px 15px rgba(16, 43, 28, 0.04);
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--verde-escuro);
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.logo span {
+  font-size: 29px;
+}
+
+.menu-pc {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-pc a {
+  position: relative;
+  padding: 8px 0;
+  color: #566459;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.menu-pc a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--verde-lima);
+  border-radius: 5px;
+  transition: width 0.25s ease;
+}
+
+.menu-pc a:hover,
+.menu-pc a.ativo {
+  color: var(--verde-medio);
+}
+
+.menu-pc a:hover::after,
+.menu-pc a.ativo::after {
+  width: 100%;
+}
+
+header button {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  background: var(--fundo);
+  color: var(--verde-escuro);
+  font-size: 19px;
+  transition: 0.25s ease;
+}
+
+header button:hover {
+  background: var(--verde-claro);
+  border-color: var(--verde-lima);
+  transform: translateY(-2px);
+}
+
+header button:active {
+  transform: scale(0.94);
+}
+
+.cabecalho {
+    width: 100%;
+    height: 72px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu,
+.pesquisa {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #e2e8df;
+    border-radius: 12px;
+    background-color: #f7f6f3;
+    color: #173b20;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #12351e;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #193b25;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navegacao a:hover {
+    color: #78c943;
+}
+
+.pesquisa {
+    font-size: 25px;
+    color: #4a9b26;
+}
+
+/* RODAPÉ ECO */
+
+.rodape {
+    width: 100%;
+    background: linear-gradient(135deg, #153d26, #24613b);
+    color: white;
+    padding: 55px 8% 20px;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.rodape-logo h2 {
+    font-size: 30px;
+    color: #8be04b;
+    margin: 0 0 15px;
+}
+
+.rodape-logo p {
+    font-size: 14px;
+    color: #e0eee3;
+    max-width: 250px;
+}
+
+.rodape-links,
+.rodape-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rodape-links h3,
+.rodape-redes h3 {
+    color: #91df56;
+    font-size: 16px;
+    margin: 5px 0 10px;
+}
+
+.rodape-links a,
+.rodape-redes a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.rodape-links a:hover,
+.rodape-redes a:hover {
+    color: #91df56;
+    padding-left: 5px;
+}
+
+.rodape-final {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+    color: #d5e5d9;
+    font-size: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+    .rodape-conteudo {
+        flex-direction: column;
+        gap: 30px;
     }
+
+    .rodape {
+        padding: 40px 8% 20px;
+    }
+}

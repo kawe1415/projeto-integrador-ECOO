@@ -202,9 +202,7 @@ header button:active {
   transform: translateY(-2px);
 }
 
-/* ========================================
-   DESTAQUE PRINCIPAL
-======================================== */
+/*DESTAQUE PRINCIPAL*/
 
 .hero {
   max-width: 1000px;
