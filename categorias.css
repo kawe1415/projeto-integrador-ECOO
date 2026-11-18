@@ -456,10 +456,10 @@ body {
     }
 
 }
+    /* CABEÇALHO */
 
 @media (max-width: 650px) {
-
-    /* CABEÇALHO */
+    }
 
     .cabecalho {
         min-height: 75px;
