@@ -1,39 +1,65 @@
 
-/* CONFIGURAÇÕES GERAIS */
+/* =====================================
+   CONFIGURAÇÕES GERAIS
+===================================== */
+
+:root {
+    --verde-escuro: #123b25;
+    --verde: #287b43;
+    --verde-medio: #55a83d;
+    --verde-lima: #a8ed55;
+    --verde-claro: #eff8e9;
+    --branco: #ffffff;
+    --texto: #34443a;
+    --cinza: #718078;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7faf6;
+    color: var(--texto);
+    line-height: 1.6;
 }
 
 
-/* CABEÇALHO */
-header {
-    background-color: #ffffff;
-    color: #123c25;
+/* =====================================
+   CABEÇALHO
+===================================== */
+
+.cabecalho {
     width: 100%;
-    height: 80px;
+    min-height: 88px;
     padding: 0 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #e5e5e5;
+    background: linear-gradient(100deg, #ffffff, #f3faed);
+    border-bottom: 1px solid #e2eddf;
+    box-shadow: 0 4px 18px rgba(18, 59, 37, 0.07);
+    position: relative;
+    z-index: 10;
 }
 
 /* LOGO */
+
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #123c25;
+    color: var(--verde-escuro);
+    font-size: 29px;
+    font-weight: 900;
+    letter-spacing: 3px;
 }
 
 .logo img {
@@ -43,416 +69,535 @@ header {
 }
 
 /* MENU */
-header button:first-of-type,
-header button:last-of-type {
-    width: 43px;
-    height: 43px;
-    background-color: #f7f6f4;
-    border: 1px solid #e1e6df;
-    border-radius: 13px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* LINKS */
-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-nav a {
-    color: #26352b;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-nav a:hover {
-    color: #62b500;
-}
-
-/* PESQUISA */
-header button:last-of-type {
-    color: #245b36;
-    border-color: #e1e6df;
-}
-
-/* CABEÇALHO NO CELULAR */
-@media (max-width: 768px) {
-    header {
-        padding: 0 15px;
-        height: 70px;
-    }
-
-    .logo {
-        font-size: 21px;
-    }
-
-    nav {
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-}
-
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-nav {
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-
-
-.titulo-pagina h1 {
-    font-size: 35px;
-}
-
-/* CONTEÚDO DO CLIMA */
-.lista-clima {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-}
-
-.item-clima {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 35px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* ESPAÇO DAS IMAGENS */
-.foto {
-    width: 320px;
-    height: 210px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* IMAGENS COLOCADAS PELO HTML */
-.foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 10px;
-}
-
-/* TEXTOS */
-.texto-clima {
-    flex: 1;
-}
-
-.texto-clima h2 {
-    color: #245b36;
-    margin-bottom: 12px;
-    font-size: 24px;
-}
-
-.texto-clima p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* PAGINAÇÃO */
-.paginacao {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 40px 0;
-}
-
-.paginacao a {
-    text-decoration: none;
-    color: #245b36;
-    padding: 10px 15px;
-    border: 1px solid #245b36;
-    border-radius: 5px;
-}
-
-.paginacao a:hover {
-    background-color: #245b36;
-    color: white;
-}
-
-
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-    header {
-        flex-direction: row;
-        gap: 15px;
-        padding: 20px;
-    }
-}
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .item-clima {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .foto {
-        width: 100%;
-        height: 220px;
-    }
-
-  
-/* ========================================
-   CABEÇALHO
-======================================== */
-
-header {
-  min-height: 78px;
-  padding: 14px 7%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  background: #ffffff;
-  border-bottom: 1px solid var(--borda);
-  box-shadow: 0 3px 15px rgba(16, 43, 28, 0.04);
-  position: relative;
-  z-index: 10;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--verde-escuro);
-  font-size: 27px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-.logo span {
-  font-size: 29px;
-}
 
 .menu-pc {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
 }
 
 .menu-pc a {
-  position: relative;
-  padding: 8px 0;
-  color: #566459;
-  font-size: 14px;
-  font-weight: 600;
-  transition: color 0.25s ease;
+    position: relative;
+    color: #34483a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 0;
+    transition: 0.3s;
 }
 
-.menu-pc a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: var(--verde-lima);
-  border-radius: 5px;
-  transition: width 0.25s ease;
+.menu-pc a:hover {
+    color: var(--verde-medio);
 }
 
-.menu-pc a:hover,
 .menu-pc a.ativo {
-  color: var(--verde-medio);
+    color: var(--verde);
 }
 
-.menu-pc a:hover::after,
 .menu-pc a.ativo::after {
-  width: 100%;
-}
-
-header button {
-  width: 42px;
-  height: 42px;
-  flex-shrink: 0;
-  border: 1px solid var(--borda);
-  border-radius: 12px;
-  background: var(--fundo);
-  color: var(--verde-escuro);
-  font-size: 19px;
-  transition: 0.25s ease;
-}
-
-header button:hover {
-  background: var(--verde-claro);
-  border-color: var(--verde-lima);
-  transform: translateY(-2px);
-}
-
-header button:active {
-  transform: scale(0.94);
-}
-
-.cabecalho {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
     width: 100%;
-    height: 72px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 7%;
-    box-sizing: border-box;
-    border-bottom: 1px solid #e5e5e5;
+    height: 3px;
+    background: var(--verde-lima);
+    border-radius: 10px;
 }
 
-.menu,
-.pesquisa {
-    width: 42px;
-    height: 42px;
-    border: 1px solid #e2e8df;
-    border-radius: 12px;
-    background-color: #f7f6f3;
-    color: #173b20;
-    font-size: 20px;
+/* PESQUISA */
+
+.botao-pesquisa {
+    width: 43px;
+    height: 43px;
+    border: none;
+    border-radius: 50%;
+    background: #eaf5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 27px;
-    font-weight: bold;
-    color: #12351e;
+.botao-pesquisa:hover {
+    background: #d9efc9;
+    transform: scale(1.06);
 }
 
-.logo img {
-    width: 48px;
-    height: 48px;
+.botao-pesquisa img {
+    width: 21px;
+    height: 21px;
     object-fit: contain;
 }
 
-.navegacao {
+
+/* =====================================
+   BANNER CLIMA
+===================================== */
+
+.banner-clima {
+    min-height: 300px;
+    padding: 65px 9%;
     display: flex;
     align-items: center;
-    gap: 30px;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 85% 15%,
+        rgba(168, 237, 85, 0.22), transparent 30%),
+        linear-gradient(115deg,
+        #103b24,
+        #23733d 55%,
+        #83c94b);
 }
 
-.navegacao a {
-    text-decoration: none;
-    color: #193b25;
+.banner-conteudo {
+    max-width: 750px;
+    position: relative;
+    z-index: 2;
+}
+
+.etiqueta-banner {
+    display: inline-block;
+    color: var(--verde-lima);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    margin-bottom: 15px;
+}
+
+.banner-conteudo h1 {
+    color: white;
+    font-size: clamp(38px, 5vw, 55px);
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.banner-conteudo h1 span {
+    color: var(--verde-lima);
+}
+
+.banner-conteudo p {
+    max-width: 620px;
+    color: #e5f1e7;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.numero-banner {
+    position: absolute;
+    right: 10%;
+    bottom: -50px;
+    color: rgba(255,255,255,0.06);
+    font-size: 200px;
+    font-weight: 900;
+}
+
+
+/* =====================================
+   INTRODUÇÃO
+===================================== */
+
+.introducao-clima {
+    padding: 65px 9% 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.subtitulo {
+    color: var(--verde);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.introducao-clima h2 {
+    color: var(--verde-escuro);
+    font-size: 29px;
+    margin-top: 8px;
+    line-height: 1.3;
+}
+
+.introducao-clima p {
+    max-width: 390px;
+    color: var(--cinza);
     font-size: 14px;
-    font-weight: 500;
+    line-height: 1.8;
 }
 
-.navegacao a:hover {
-    color: #78c943;
+
+/* =====================================
+   LISTA DE NOTÍCIAS
+===================================== */
+
+.lista-clima {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 35px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
 }
 
-.pesquisa {
-    font-size: 25px;
-    color: #4a9b26;
+.item-clima {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    align-items: stretch;
+    background: white;
+    border: 1px solid #e7eee5;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 7px 25px rgba(18, 59, 37, 0.06);
+    transition: 0.3s;
 }
 
-/* RODAPÉ ECO */
+.item-clima:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(18, 59, 37, 0.12);
+}
+
+/* IMAGENS */
+
+.imagem-clima {
+    min-height: 250px;
+    overflow: hidden;
+    background: #e5eee2;
+}
+
+.imagem-clima img {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.item-clima:hover .imagem-clima img {
+    transform: scale(1.05);
+}
+
+/* TEXTOS */
+
+.conteudo-clima {
+    padding: 35px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tag-clima {
+    align-self: flex-start;
+    background: #eaf6e3;
+    color: var(--verde);
+    padding: 6px 13px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    margin-bottom: 16px;
+}
+
+.conteudo-clima h2 {
+    color: var(--verde-escuro);
+    font-size: 23px;
+    line-height: 1.4;
+    margin-bottom: 13px;
+}
+
+.conteudo-clima p {
+    color: #68766c;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.leitura {
+    color: var(--verde);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================
+   PAGINAÇÃO
+===================================== */
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.paginacao a,
+.paginacao span {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--verde-escuro);
+    background: white;
+    border: 1px solid #e1eadf;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.paginacao a:hover,
+.paginacao a.atual {
+    background: var(--verde);
+    color: white;
+    border-color: var(--verde);
+}
+
+.paginacao span {
+    border: none;
+    background: transparent;
+}
+
+
+/* =====================================
+   RODAPÉ
+===================================== */
 
 .rodape {
-    width: 100%;
-    background: linear-gradient(135deg, #153d26, #24613b);
+    padding: 60px 8% 25px;
+    background: linear-gradient(140deg, #0e2e1c, #17472b);
     color: white;
-    padding: 55px 8% 20px;
-    box-sizing: border-box;
-    margin-top: 70px;
 }
 
 .rodape-conteudo {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 1200px;
-    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 45px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.13);
 }
 
+/* LOGO DO RODAPÉ */
+
 .rodape-logo h2 {
-    font-size: 30px;
-    color: #8be04b;
-    margin: 0 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.rodape-logo h2 img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
 }
 
 .rodape-logo p {
+    max-width: 260px;
+    color: #c4d5c8;
     font-size: 14px;
-    color: #e0eee3;
-    max-width: 250px;
+    line-height: 1.8;
 }
 
-.rodape-links,
-.rodape-redes {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+/* LINKS */
 
 .rodape-links h3,
 .rodape-redes h3 {
-    color: #91df56;
-    font-size: 16px;
-    margin: 5px 0 10px;
+    color: var(--verde-lima);
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
 }
 
 .rodape-links a,
 .rodape-redes a {
-    color: #ffffff;
+    display: block;
+    width: fit-content;
+    color: #d0ded2;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
+    margin-bottom: 12px;
     transition: 0.3s;
 }
 
 .rodape-links a:hover,
 .rodape-redes a:hover {
-    color: #91df56;
-    padding-left: 5px;
+    color: var(--verde-lima);
+    transform: translateX(4px);
 }
+
+/* DIREITOS AUTORAIS */
 
 .rodape-final {
-    border-top: 1px solid rgba(255,255,255,0.2);
-    margin-top: 50px;
-    padding-top: 50px;
+    padding-top: 25px;
     text-align: center;
-    color: #d5e5d9;
-    font-size: 20px;
 }
 
-/* RESPONSIVIDADE */
+.rodape-final p {
+    color: #aebfb2;
+    font-size: 12px;
+}
 
-@media (max-width: 700px) {
-    .rodape-conteudo {
-        flex-direction: column;
-        gap: 30px;
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        padding: 0 4%;
     }
 
+    .menu-pc {
+        gap: 20px;
+    }
+
+    .rodape-conteudo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-clima {
+        grid-template-columns: 38% 1fr;
+    }
+
+    .conteudo-clima {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        min-height: 75px;
+        padding: 0 5%;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-pc {
+        width: 100%;
+        justify-content: center;
+        gap: 17px;
+        padding: 10px 0 15px;
+        order: 3;
+        flex-wrap: wrap;
+    }
+
+    .menu-pc a {
+        font-size: 12px;
+    }
+
+    .botao-pesquisa {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* BANNER */
+
+    .banner-clima {
+        min-height: 250px;
+        padding: 45px 7%;
+    }
+
+    .banner-conteudo h1 {
+        font-size: 34px;
+    }
+
+    .banner-conteudo p {
+        font-size: 13px;
+    }
+
+    .numero-banner {
+        font-size: 120px;
+        right: 4%;
+    }
+
+    /* INTRODUÇÃO */
+
+    .introducao-clima {
+        padding: 45px 7% 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .introducao-clima h2 {
+        font-size: 24px;
+    }
+
+    /* NOTÍCIAS */
+
+    .lista-clima {
+        padding: 25px 6% 55px;
+        gap: 22px;
+    }
+
+    .item-clima {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-clima,
+    .imagem-clima img {
+        height: 210px;
+        min-height: 210px;
+    }
+
+    .conteudo-clima {
+        padding: 24px;
+    }
+
+    .conteudo-clima h2 {
+        font-size: 20px;
+    }
+
+    .conteudo-clima p {
+        font-size: 13px;
+    }
+
+    /* PAGINAÇÃO */
+
+    .paginacao {
+        gap: 6px;
+    }
+
+    .paginacao a,
+    .paginacao span {
+        width: 34px;
+        height: 34px;
+    }
+
+    /* RODAPÉ */
+
     .rodape {
-        padding: 40px 8% 20px;
+        padding: 45px 7% 22px;
+    }
+
+    .rodape-conteudo {
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
 }

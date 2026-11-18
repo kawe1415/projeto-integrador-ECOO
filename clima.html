@@ -1,103 +1,236 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eco – Clima</title>
-<link rel="stylesheet" href="clima.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eco – Clima</title>
+    <link rel="stylesheet" href="clima.css">
 </head>
+
 <body>
 
-<header>
-  <button aria-label="Menu">☰</button>
-  <div class="logo"><span><img src="IMG/LogoEco.jpg" width="50"></span> ECO</div>
-  <nav class="menu-pc">
-    <a href="categorias.html">Categorias</a>
-      <a href="clima.html">Clima</a>
-      <a href="sobre.html">Sobre nós</a>
-   
-  </nav>
-  <button aria-label="Buscar"><img src="IMG/Icone-pesquisa.jpg" width="0"></button>
-</header>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
 
-<div class="titulo-pagina">
-</div>
-
-<main class="lista-clima">
-  <article class="item-clima">
-    <div class="item-clima"><img src="IMG/furacão.png" width="300"</div>
-    <div>
-      <span class="item-clima">CLIMA</span>
-      <p>O calor intenso e a falta de chuva deixaram a terra completamente seca e rachada. Este cenário mostra o impacto severo da estiagem prolongada na vegetação e no solo, dificultando a agricultura e a vida na região.</p>
-    </div>
-  </article>
-
-  <article class="item-clima">
-    <div class="item-clima"><img src="IMG/Nuvens-clima.jpg" width="300"</div>
-    <div>
-      <span class="item-clima">CLIMA</span>
-      <p>Visto lá do alto, este enorme redemoinho de nuvens mostra a força de um furacão se formando no oceano. Esses fenômenos trazem ventos muito fortes e chuvas intensas, mudando rapidamente o clima das áreas por onde passam.</p>
-    </div>
-  </article>
-
-  <article class="item-clima">
-    <div class="item-clima"><img src="IMG/Clima.jpg" width="300"</div>
-    <div>
-      <span class="item-clima">CLIMA</span>
-      <p>Grandes blocos de gelo flutuam nas águas geladas das regiões polares da Terra. O aumento das temperaturas globais acelera o derretimento dessas geleiras, um sinal alarmante de como o clima do nosso planeta está mudando.</p>
-    </div>
-  </article>
-
-  <nav class="paginacao" aria-label="Páginas">
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a class="atual" href="#">3</a>
-    <span>…</span>
-    <a href="#">8</a>
-    <a href="#">›</a>
-  </nav>
-</main>
-
-
-<footer class="rodape">
-
-    <div class="rodape-conteudo">
-
-        <div class="rodape-logo">
-            <h2>🍃 ECO</h2>
-            <p>Juntos por um planeta mais sustentável.</p>
+        <div class="logo">
+            <img src="IMG/LogoEco.jpg" alt="Logo ECO">
+            <span>ECO</span>
         </div>
 
-        <div class="rodape-links">
-            <h3>NAVEGAÇÃO</h3>
+        <nav class="menu-pc">
             <a href="index.html">Início</a>
             <a href="categorias.html">Categorias</a>
+            <a href="clima.html" class="ativo">Clima</a>
             <a href="sobre.html">Sobre nós</a>
-            <a href="contato.html">Contato</a>
+        </nav>
+
+        <button class="botao-pesquisa" aria-label="Buscar">
+            <img src="IMG/Icone-pesquisa.jpg" alt="Pesquisar">
+        </button>
+
+    </header>
+
+
+    <!-- BANNER CLIMA -->
+    <section class="banner-clima">
+
+        <div class="banner-conteudo">
+
+            <span class="etiqueta-banner">MEIO AMBIENTE E PLANETA</span>
+
+            <h1>CLIMA E <span>MUDANÇAS</span></h1>
+
+            <p>
+                Entenda os fenômenos climáticos, acompanhe as transformações
+                do planeta e descubra como o clima influencia nossas vidas.
+            </p>
+
         </div>
 
-        <div class="rodape-links">
-            <h3>CATEGORIAS</h3>
-            <a href="#">Meio Ambiente</a>
-            <a href="#">Clima</a>
-            <a href="#">Biodiversidade</a>
-            <a href="#">Sustentabilidade</a>
+        <div class="numero-banner">01</div>
+
+    </section>
+
+
+    <!-- INTRODUÇÃO -->
+    <section class="introducao-clima">
+
+        <div>
+            <span class="subtitulo">ACOMPANHE O PLANETA</span>
+            <h2>O que está acontecendo com o clima?</h2>
         </div>
 
-        <div class="rodape-redes">
-            <h3>REDES SOCIAIS</h3>
-            <a href="#">📷 Instagram</a>
-            <a href="#">📘 Facebook</a>
+        <p>
+            Informações sobre fenômenos naturais, mudanças climáticas
+            e seus impactos no meio ambiente.
+        </p>
+
+    </section>
+
+
+    <!-- NOTÍCIAS -->
+    <main class="lista-clima">
+
+        <article class="item-clima">
+
+            <div class="imagem-clima">
+                <img src="IMG/furacão.png" alt="Terra seca devido à estiagem">
+            </div>
+
+            <div class="conteudo-clima">
+
+                <span class="tag-clima">ESTIAGEM</span>
+
+                <h2>O impacto da seca e do calor intenso no planeta</h2>
+
+                <p>
+                    O calor intenso e a falta de chuva deixaram a terra
+                    completamente seca e rachada. Este cenário mostra o
+                    impacto severo da estiagem prolongada na vegetação e
+                    no solo, dificultando a agricultura e a vida na região.
+                </p>
+
+                <span class="leitura">CLIMA • MEIO AMBIENTE</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="item-clima">
+
+            <div class="imagem-clima">
+                <img src="IMG/Nuvens-clima.jpg" alt="Furacão visto do alto">
+            </div>
+
+            <div class="conteudo-clima">
+
+                <span class="tag-clima">FENÔMENOS NATURAIS</span>
+
+                <h2>A força dos furacões e das tempestades</h2>
+
+                <p>
+                    Visto lá do alto, este enorme redemoinho de nuvens
+                    mostra a força de um furacão se formando no oceano.
+                    Esses fenômenos trazem ventos muito fortes e chuvas
+                    intensas, mudando rapidamente o clima das áreas
+                    por onde passam.
+                </p>
+
+                <span class="leitura">CLIMA • TEMPESTADES</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="item-clima">
+
+            <div class="imagem-clima">
+                <img src="IMG/Clima.jpg" alt="Blocos de gelo nas regiões polares">
+            </div>
+
+            <div class="conteudo-clima">
+
+                <span class="tag-clima">AQUECIMENTO GLOBAL</span>
+
+                <h2>O derretimento das geleiras preocupa especialistas</h2>
+
+                <p>
+                    Grandes blocos de gelo flutuam nas águas geladas das
+                    regiões polares da Terra. O aumento das temperaturas
+                    globais acelera o derretimento dessas geleiras,
+                    um sinal de como o clima do nosso planeta está mudando.
+                </p>
+
+                <span class="leitura">CLIMA • AQUECIMENTO GLOBAL</span>
+
+            </div>
+
+        </article>
+
+
+        <!-- PAGINAÇÃO -->
+        <nav class="paginacao" aria-label="Paginação">
+
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a class="atual" href="#">3</a>
+            <span>...</span>
+            <a href="#">8</a>
+            <a href="#">›</a>
+
+        </nav>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <div class="rodape-logo">
+
+                <h2>
+                    <img src="IMG/LogoEco.jpg" alt="Logo ECO">
+                    ECO
+                </h2>
+
+                <p>
+                    Informação, conscientização e ação para
+                    um planeta mais sustentável.
+                </p>
+
+            </div>
+
+
+            <div class="rodape-links">
+
+                <h3>NAVEGAÇÃO</h3>
+
+                <a href="index.html">Início</a>
+                <a href="categorias.html">Categorias</a>
+                <a href="clima.html">Clima</a>
+                <a href="sobre.html">Sobre nós</a>
+
+            </div>
+
+
+            <div class="rodape-links">
+
+                <h3>CATEGORIAS</h3>
+
+                <a href="#">Meio Ambiente</a>
+                <a href="clima.html">Clima</a>
+                <a href="biodiversidade.html">Biodiversidade</a>
+                <a href="#">Sustentabilidade</a>
+
+            </div>
+
+
+            <div class="rodape-redes">
+
+                <h3>REDES SOCIAIS</h3>
+
+                <a href="#">📷 Instagram</a>
+                <a href="#">📘 Facebook</a>
+                <a href="#">▶ YouTube</a>
+
+            </div>
+
         </div>
 
-    </div>
 
-    <div class="rodape-final">
-        <p>© 2026 Eco Futuro. Todos os direitos reservados.</p>
-    </div>
+        <div class="rodape-final">
 
-</footer>
+            <p>© 2026 Eco Futuro. Todos os direitos reservados.</p>
 
+        </div>
+
+    </footer>
 
 </body>
 </html>
