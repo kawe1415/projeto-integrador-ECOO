@@ -1,3 +1,4 @@
+
 /* =====================================
    CONFIGURAÇÕES GERAIS
 ===================================== */
@@ -49,12 +50,14 @@ body {
     z-index: 10;
 }
 
+/* LOGO */
+
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--verde-escuro);
-    font-size: 20px;
+    font-size: 29px;
     font-weight: 900;
     letter-spacing: 3px;
 }
@@ -65,10 +68,17 @@ body {
     object-fit: contain;
 }
 
+/* MENU */
+
 .menu-pc {
     display: flex;
     align-items: center;
-    gap: 38px;
+    gap: 25px;
+}
+
+.menu-pc a {
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .menu-pc a {
@@ -100,6 +110,8 @@ body {
     border-radius: 10px;
 }
 
+/* PESQUISA */
+
 .botao-pesquisa {
     width: 43px;
     height: 43px;
@@ -126,7 +138,7 @@ body {
 
 
 /* =====================================
-   BANNER
+   BANNER SOBRE
 ===================================== */
 
 .banner-sobre {
@@ -185,7 +197,7 @@ body {
     position: absolute;
     right: 10%;
     bottom: -50px;
-    color: rgba(255,255,255,0.06);
+    color: rgba(255, 255, 255, 0.06);
     font-size: 200px;
     font-weight: 900;
 }
@@ -196,13 +208,13 @@ body {
 ===================================== */
 
 .secao {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 65px 35px 35px;
+    padding: 65px 9%;
 }
 
 .titulo-secao {
-    margin-bottom: 35px;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 40px;
 }
 
 .subtitulo {
@@ -226,7 +238,8 @@ body {
 .titulo-secao p {
     color: var(--cinza);
     font-size: 14px;
-    margin-top: 10px;
+    line-height: 1.8;
+    margin-top: 12px;
 }
 
 
@@ -238,13 +251,16 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 27px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .bloco {
     background: white;
     border: 1px solid #e7eee5;
     border-radius: 16px;
-    padding: 32px;
+    padding: 35px 28px;
+    text-align: center;
     box-shadow: 0 7px 25px rgba(18, 59, 37, 0.06);
     transition: 0.3s;
 }
@@ -255,15 +271,15 @@ body {
 }
 
 .icone {
-    width: 55px;
-    height: 55px;
-    background: #eaf6e3;
-    border-radius: 14px;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
-    margin-bottom: 20px;
+    background: #eaf6e3;
+    border-radius: 50%;
+    font-size: 29px;
 }
 
 .bloco h3 {
@@ -284,24 +300,21 @@ body {
 ===================================== */
 
 .secao-equipe {
-    padding-top: 45px;
-    padding-bottom: 75px;
+    background: #eff8e9;
 }
 
 .membros {
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 22px;
 }
 
 .membro {
     background: white;
-    border: 1px solid #e7eee5;
+    border: 1px solid #e1eadf;
     border-radius: 16px;
     padding: 25px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 7px 25px rgba(18, 59, 37, 0.06);
+    text-align: center;
+    box-shadow: 0 7px 25px rgba(18, 59, 37, 0.05);
     transition: 0.3s;
 }
 
@@ -311,17 +324,19 @@ body {
 }
 
 .avatar {
-    width: 110px;
-    height: 110px;
+    width: 115px;
+    height: 115px;
+    display: block;
+    margin: 0 auto 17px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #eaf6e3;
-    margin-bottom: 16px;
 }
 
 .membro h3 {
     color: var(--verde-escuro);
     font-size: 17px;
+    font-weight: 800;
 }
 
 
@@ -330,30 +345,31 @@ body {
 ===================================== */
 
 .chamada {
-    margin: 0 8% 75px;
-    padding: 45px 55px;
-    border-radius: 18px;
+    padding: 55px 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
+    gap: 30px;
 
     background:
         radial-gradient(circle at 90% 20%,
-        rgba(168, 237, 85, 0.18), transparent 30%),
-        linear-gradient(115deg, #103b24, #23733d);
-    color: white;
+        rgba(168, 237, 85, 0.2), transparent 30%),
+        linear-gradient(115deg,
+        #103b24,
+        #23733d 55%,
+        #83c94b);
 }
 
 .chamada small {
     color: var(--verde-lima);
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: 2px;
 }
 
 .chamada h2 {
-    font-size: 30px;
+    color: white;
+    font-size: 32px;
     font-weight: 900;
     margin: 5px 0 10px;
 }
@@ -365,15 +381,15 @@ body {
 
 .botoes {
     display: flex;
-    gap: 12px;
+    align-items: center;
 }
 
 .btn {
     display: inline-block;
-    text-decoration: none;
-    padding: 13px 25px;
+    padding: 13px 28px;
     border-radius: 30px;
-    font-size: 12px;
+    text-decoration: none;
+    font-size: 13px;
     font-weight: 900;
     letter-spacing: 1px;
     transition: 0.3s;
@@ -405,8 +421,10 @@ body {
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 45px;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255,255,255,0.13);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 }
+
+/* LOGO */
 
 .rodape-logo h2 {
     display: flex;
@@ -432,6 +450,8 @@ body {
     line-height: 1.8;
 }
 
+/* LINKS */
+
 .rodape-links h3,
 .rodape-redes h3 {
     color: var(--verde-lima);
@@ -456,6 +476,8 @@ body {
     color: var(--verde-lima);
     transform: translateX(4px);
 }
+
+/* DIREITOS */
 
 .rodape-final {
     padding-top: 25px;
@@ -495,6 +517,11 @@ body {
     }
 
 }
+
+
+/* =====================================
+   RESPONSIVIDADE PARA CELULAR
+===================================== */
 
 @media (max-width: 650px) {
 
@@ -556,20 +583,33 @@ body {
     /* SEÇÕES */
 
     .secao {
-        padding: 45px 7% 25px;
+        padding: 45px 7%;
+    }
+
+    .titulo-secao {
+        margin-bottom: 30px;
     }
 
     .titulo-secao h2 {
         font-size: 24px;
     }
 
+    /* MISSÃO, VISÃO E VALORES */
+
     .equipe {
         grid-template-columns: 1fr;
-        gap: 18px;
+        gap: 20px;
     }
+
+    .bloco {
+        padding: 28px 23px;
+    }
+
+    /* NOSSA EQUIPE */
 
     .membros {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     .membro {
@@ -577,21 +617,21 @@ body {
     }
 
     .avatar {
-        width: 90px;
-        height: 90px;
+        width: 95px;
+        height: 95px;
     }
 
     /* CHAMADA */
 
     .chamada {
-        margin: 25px 6% 55px;
-        padding: 30px 25px;
+        padding: 45px 7%;
         flex-direction: column;
         align-items: flex-start;
+        gap: 22px;
     }
 
     .chamada h2 {
-        font-size: 25px;
+        font-size: 27px;
     }
 
     /* RODAPÉ */
