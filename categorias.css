@@ -13,6 +13,21 @@
     --cinza: #718078;
 }
 
+/* =====================================
+   CONFIGURAÇÕES GERAIS
+===================================== */
+
+:root {
+    --verde-escuro: #123b25;
+    --verde: #287b43;
+    --verde-medio: #55a83d;
+    --verde-lima: #a8ed55;
+    --verde-claro: #eff8e9;
+    --branco: #ffffff;
+    --texto: #34443a;
+    --cinza: #718078;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -546,5 +561,3 @@ body {
         grid-template-columns: 1fr;
         gap: 32px;
     }
-
-}
