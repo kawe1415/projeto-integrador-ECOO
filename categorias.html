@@ -1,69 +1,247 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Eco – Notícias Recentes</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eco – Notícias Recentes</title>
+    <link rel="stylesheet" href="categorias.css">
 </head>
 
 <body>
 
-  <header>
-    <button aria-label="Menu">☰</button>
-    <div class="logo"><span><img src="IMG/LogoEco.jpg" alt="Logo Eco" width="50"></span> ECO</div>
-    <nav class="menu-pc">
-      <a href="categorias.html">Categorias</a>
-      <a href="clima.html">Clima</a>
-      <a href="sobre.html">Sobre nós</a>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
 
-    </nav>
-    <button aria-label="Buscar"><img src="IMG/Icone-pesquisa.jpg"></button>
-  </header>
+        <div class="logo">
+            <img src="IMG/LogoEco.jpg" alt="Logo ECO">
+            <span>ECO</span>
+        </div>
 
-  <section class="hero hero-noticias">
-    <h1>NOTÍCIAS <b>RECENTES</b></h1>
-  </section>
+        <nav class="menu-pc">
+            <a href="index.html" class="ativo">Início</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="clima.html">Clima</a>
+            <a href="sobre.html">Sobre nós</a>
+        </nav>
 
-  <main class="grade-noticias">
-    <a class="card-noticia" href="#">
-      <div class="foto floresta">
-        <img src="IMG/meio-ambiente.jpg" alt="Floresta preservada" width="450">
+        <button class="botao-pesquisa" aria-label="Buscar">
+            <img src="IMG/Icone-pesquisa.jpg" alt="Pesquisar">
+        </button>
 
-        "
-      </div>
-      <span class="tag">Meio Ambiente</span>
-      <h3>Cidades investem em preservação de rios e nascentes</h3>
-    </a>
+    </header>
 
-    <a class="card-noticia" href="#">
-      <div class="foto arara">
-        <img src="IMG/Arara.jpg" alt="Arara na natureza" width=450">
-      </div>
-      <span class="tag">Biodiversidade</span>
-      <h3>Nova espécie de planta é descoberta na Amazônia</h3>
-    </a>
 
-    <a class="card-noticia" href="#">
-      <div class="foto fogo">
-        <img src="IMG/incendio.jpg" alt="Incêndio florestal" width="450">
-      </div>
-      <span class="tag">Notícias passadas</span>
-      <h3>Cidades investem em preservação de rios e nascentes</h3>
-    </a>
+    <!-- BANNER -->
+    <section class="banner-noticias">
 
-    <a class="card-noticia" href="clima.html">
-      <div class="foto gelo">
-        <img src="IMG/mudanças.jpg" alt="Gelo derretendo devido ao aquecimento global" width="450">
-      </div>
-      <span class="tag">Clima</span>
-      <h3>Mudanças climáticas aceleram eventos extremos no país</h3>
-    </a>
-  </main>
+        <div class="banner-conteudo">
 
-  <a class="voltar-pagina" href="index.html" aria-label="Voltar">←</a>
+            <span class="etiqueta-banner">
+                MEIO AMBIENTE E PLANETA
+            </span>
+
+            <h1>NOTÍCIAS <span>RECENTES</span></h1>
+
+            <p>
+                Acompanhe as principais notícias sobre o meio ambiente,
+                biodiversidade, sustentabilidade e as transformações
+                que acontecem no nosso planeta.
+            </p>
+
+        </div>
+
+        <div class="numero-banner">01</div>
+
+    </section>
+
+
+    <!-- INTRODUÇÃO -->
+    <section class="introducao-noticias">
+
+        <div>
+            <span class="subtitulo">FIQUE INFORMADO</span>
+            <h2>Últimas notícias do planeta</h2>
+        </div>
+
+        <p>
+            Informação e conhecimento para entender os acontecimentos
+            ambientais mais importantes da atualidade.
+        </p>
+
+    </section>
+
+
+    <!-- NOTÍCIAS -->
+    <main class="grade-noticias">
+
+        <a class="card-noticia" href="#">
+
+            <div class="foto">
+                <img src="IMG/meio-ambiente.jpg"
+                     alt="Floresta preservada">
+            </div>
+
+            <div class="conteudo-noticia">
+
+                <span class="tag">MEIO AMBIENTE</span>
+
+                <h3>Cidades investem em preservação de rios e nascentes</h3>
+
+                <p>
+                    Projetos ambientais buscam proteger recursos hídricos
+                    e incentivar a preservação da natureza nas cidades.
+                </p>
+
+                <span class="leitura">MEIO AMBIENTE • NOTÍCIAS</span>
+
+            </div>
+
+        </a>
+
+
+        <a class="card-noticia" href="#">
+
+            <div class="foto">
+                <img src="IMG/Arara.jpg"
+                     alt="Arara na natureza">
+            </div>
+
+            <div class="conteudo-noticia">
+
+                <span class="tag">BIODIVERSIDADE</span>
+
+                <h3>Nova espécie de planta é descoberta na Amazônia</h3>
+
+                <p>
+                    A biodiversidade amazônica continua surpreendendo
+                    pesquisadores com novas descobertas científicas.
+                </p>
+
+                <span class="leitura">BIODIVERSIDADE • NATUREZA</span>
+
+            </div>
+
+        </a>
+
+
+        <a class="card-noticia" href="#">
+
+            <div class="foto">
+                <img src="IMG/incendio.jpg"
+                     alt="Incêndio florestal">
+            </div>
+
+            <div class="conteudo-noticia">
+
+                <span class="tag">NOTÍCIAS PASSADAS</span>
+
+                <h3>Incêndios florestais reforçam alerta ambiental</h3>
+
+                <p>
+                    As queimadas representam uma ameaça aos ecossistemas,
+                    à vegetação e aos animais que vivem nas florestas.
+                </p>
+
+                <span class="leitura">MEIO AMBIENTE • INCÊNDIOS</span>
+
+            </div>
+
+        </a>
+
+
+        <a class="card-noticia" href="clima.html">
+
+            <div class="foto">
+                <img src="IMG/mudanças.jpg"
+                     alt="Gelo derretendo devido ao aquecimento global">
+            </div>
+
+            <div class="conteudo-noticia">
+
+                <span class="tag">CLIMA</span>
+
+                <h3>Mudanças climáticas aceleram eventos extremos no país</h3>
+
+                <p>
+                    As alterações climáticas provocam mudanças nos padrões
+                    de temperatura e aumentam os desafios ambientais.
+                </p>
+
+                <span class="leitura">CLIMA • AQUECIMENTO GLOBAL</span>
+
+            </div>
+
+        </a>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <div class="rodape-logo">
+
+                <h2>
+                    <img src="IMG/LogoEco.jpg" alt="Logo ECO">
+                    ECO
+                </h2>
+
+                <p>
+                    Informação, conscientização e ação para
+                    um planeta mais sustentável.
+                </p>
+
+            </div>
+
+
+            <div class="rodape-links">
+
+                <h3>NAVEGAÇÃO</h3>
+
+                <a href="index.html">Início</a>
+                <a href="categorias.html">Categorias</a>
+                <a href="clima.html">Clima</a>
+                <a href="sobre.html">Sobre nós</a>
+
+            </div>
+
+
+            <div class="rodape-links">
+
+                <h3>CATEGORIAS</h3>
+
+                <a href="#">Meio Ambiente</a>
+                <a href="clima.html">Clima</a>
+                <a href="biodiversidade.html">Biodiversidade</a>
+                <a href="#">Sustentabilidade</a>
+
+            </div>
+
+
+            <div class="rodape-redes">
+
+                <h3>REDES SOCIAIS</h3>
+
+                <a href="#">📷 Instagram</a>
+                <a href="#">📘 Facebook</a>
+                <a href="#">▶️ YouTube</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="rodape-final">
+
+            <p>© 2026 Eco Futuro. Todos os direitos reservados.</p>
+
+        </div>
+
+    </footer>
 
 </body>
-
 </html>

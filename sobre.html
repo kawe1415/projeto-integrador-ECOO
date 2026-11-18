@@ -1,117 +1,229 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eco – Sobre nós</title>
-<link rel="stylesheet" href="Sobre.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eco – Sobre nós</title>
+    <link rel="stylesheet" href="sobre.css">
 </head>
+
 <body>
 
-<header>
-  <button aria-label="Menu">☰</button>
-  <div class="logo"><span><img src="IMG/LogoEco.jpg" width="50"></span> ECO</div>
-  <nav class="menu-pc">
-    <a href="index.html" class="ativo">Início</a>
-    <a href="categorias.html">Categorias</a>
-    <a href="clima.html">Clima</a>
-    <a href="sobre.html">Sobre nós</a>
-</nav>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
 
-  </nav>
-  <button aria-label="Buscar">🔍</button>
-</header>
+        <div class="logo">
+            <img src="IMG/LogoEco.jpg" alt="Logo ECO">
+            <span>ECO</span>
+        </div>
 
-<section class="hero hero-sobre">
-  <h1>Sobre nós</h1>
-  <p>O Eco é um site dedicado à informação e à conscientização ambiental, criado para aproximar as pessoas das questões que afetam o nosso planeta.</p>
-</section>
+        <nav class="menu-pc">
+            <a href="index.html">Início</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="clima.html">Clima</a>
+            <a href="sobre.html" class="ativo">Sobre nós</a>
+        </nav>
 
-<section class="secao">
-    <h2>Nossa equipe</h2>
-    <div class="equipe">
-    <div class="bloco">
-      <div class="icone">🎯</div>
-      <h3>Missão</h3>
-      <p>Informar de forma clara e acessível sobre meio ambiente, clima e sustentabilidade.</p>
-    </div>
-    <div class="bloco">
-      <div class="icone">🔭</div>
-      <h3>Visão</h3>
-      <p>Ser referência em conteúdo ambiental e inspirar atitudes que ajudem a preservar o planeta.</p>
-    </div>
-    <div class="bloco">
-      <div class="icone">💚</div>
-      <h3>Valores</h3>
-      <p>Compromisso com a verdade, respeito à natureza, responsabilidade e cooperação.</p>
-    </div>
-  </div>
-</section>
+        <button class="botao-pesquisa" aria-label="Buscar">
+            <img src="IMG/Icone-pesquisa.jpg" alt="Pesquisar">
+        </button>
 
-<section class="secao">
-  <h2>Nossa <b>equipe</b></h2>
-  <div class="equipe">
-    <div class="membro">
-      <img class="avatar" src="IMG/Kawe.jpg" alt="Foto do Kawe">
-      <h3>Kawe</h3>
-    </div>
-     <div class="membro">
-      <img class="avatar" src="IMG/Kawe.jpg" alt="Foto do Kawe">
-      <h3>Enzo</h3>
-      </div>
-    <div class="membro">
-      <img class="avatar" src="IMG/Guilherme.jpg" alt="Foto do Guilherme">
-      <h3>Guilherme</h3>
-    </div>
-    <div class="membro">
-      <img class="avatar" src="IMG/Eduardo.jpg" alt="Foto do Eduardo">
-      <h3>Eduardo</h3>
-    </div>
-    <div class="membro">
-      <img class="avatar" src="IMG/Murilo.jpg" alt="Foto do Murilo">
-      <h3>Murilo</h3>
-    </div>
-  </div>
-</section>
+    </header>
 
-<section class="chamada">
-  <div>
-    <small>JUNTOS POR UM</small>
-    <h2>PLANETA MELHOR</h2>
-    <p>Receba nossas novidades e faça parte dessa mudança.</p>
-  </div>
-  <div class="botoes">
-    <a class="btn cheio" href="login.html">INSCREVER</a>
-  </div>
-</section>
 
-<footer>
-  <div class="colunas">
-    <div>
-      <div class="logo"><span><img src="IMG/LogoEco.jpg" width="30"</span> ECO</div>
-      <p>Juntos por um planeta mais sustentável.</p>
-    </div>
-    <nav>
-      <h3>NAVEGAÇÃO</h3>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="clima.html">Categorias</a></li>
-        <li class="ativo"><a href="sobre.html">Sobre nós</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-    <nav>
-      <h3>CATEGORIAS</h3>
-      <ul>
-        <li><a href="#">Meio Ambiente</a></li>
-        <li><a href="clima.html">Clima</a></li>
-        <li><a href="#">Biodiversidade</a></li>
-        <li><a href="#">Sustentabilidade</a></li>
-      </ul>
-    </nav>
-  </div>
-  <p class="copy">© 2026 Eco Futuro. Todos os direitos reservados.</p>
-</footer>
+    <!-- BANNER -->
+    <section class="banner-sobre">
+
+        <div class="banner-conteudo">
+
+            <span class="etiqueta-banner">CONHEÇA NOSSO PROJETO</span>
+
+            <h1>SOBRE <span>NÓS</span></h1>
+
+            <p>
+                O Eco é um site dedicado à informação e à conscientização
+                ambiental, criado para aproximar as pessoas das questões
+                que afetam o nosso planeta.
+            </p>
+
+        </div>
+
+        <div class="numero-banner">01</div>
+
+    </section>
+
+
+    <!-- MISSÃO, VISÃO E VALORES -->
+    <section class="secao">
+
+        <div class="titulo-secao">
+            <span class="subtitulo">NOSSA ESSÊNCIA</span>
+            <h2>O que nos <span>representa</span></h2>
+            <p>
+                Conheça os princípios que orientam nosso trabalho
+                e nosso compromisso com o planeta.
+            </p>
+        </div>
+
+        <div class="equipe">
+
+            <div class="bloco">
+                <div class="icone">🎯</div>
+                <h3>Missão</h3>
+                <p>
+                    Informar de forma clara e acessível sobre meio ambiente,
+                    clima e sustentabilidade.
+                </p>
+            </div>
+
+            <div class="bloco">
+                <div class="icone">🔭</div>
+                <h3>Visão</h3>
+                <p>
+                    Ser referência em conteúdo ambiental e inspirar atitudes
+                    que ajudem a preservar o planeta.
+                </p>
+            </div>
+
+            <div class="bloco">
+                <div class="icone">💚</div>
+                <h3>Valores</h3>
+                <p>
+                    Compromisso com a verdade, respeito à natureza,
+                    responsabilidade e cooperação.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOSSA EQUIPE -->
+    <section class="secao secao-equipe">
+
+        <div class="titulo-secao">
+            <span class="subtitulo">QUEM FAZ ACONTECER</span>
+            <h2>Nossa <span>equipe</span></h2>
+            <p>
+                As pessoas por trás do projeto ECO.
+            </p>
+        </div>
+
+        <div class="equipe membros">
+
+            <div class="membro">
+                <img class="avatar" src="IMG/Kawe.jpg" alt="Foto do Kawe">
+                <h3>Kawe</h3>
+            </div>
+
+            <div class="membro">
+                <img class="avatar" src="IMG/Kawe.jpg" alt="Foto do Enzo">
+                <h3>Enzo</h3>
+            </div>
+
+            <div class="membro">
+                <img class="avatar" src="IMG/Guilherme.jpg" alt="Foto do Guilherme">
+                <h3>Guilherme</h3>
+            </div>
+
+            <div class="membro">
+                <img class="avatar" src="IMG/Eduardo.jpg" alt="Foto do Eduardo">
+                <h3>Eduardo</h3>
+            </div>
+
+            <div class="membro">
+                <img class="avatar" src="IMG/Murilo.jpg" alt="Foto do Murilo">
+                <h3>Murilo</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHAMADA -->
+    <section class="chamada">
+
+        <div>
+            <small>JUNTOS POR UM</small>
+            <h2>PLANETA MELHOR</h2>
+            <p>
+                Receba nossas novidades e faça parte dessa mudança.
+            </p>
+        </div>
+
+        <div class="botoes">
+            <a class="btn cheio" href="login.html">INSCREVER</a>
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <div class="rodape-logo">
+
+                <h2>
+                    <img src="IMG/LogoEco.jpg" alt="Logo ECO">
+                    ECO
+                </h2>
+
+                <p>
+                    Informação, conscientização e ação para
+                    um planeta mais sustentável.
+                </p>
+
+            </div>
+
+
+            <div class="rodape-links">
+
+                <h3>NAVEGAÇÃO</h3>
+
+                <a href="index.html">Início</a>
+                <a href="categorias.html">Categorias</a>
+                <a href="clima.html">Clima</a>
+                <a href="sobre.html">Sobre nós</a>
+
+            </div>
+
+
+            <div class="rodape-links">
+
+                <h3>CATEGORIAS</h3>
+
+                <a href="#">Meio Ambiente</a>
+                <a href="clima.html">Clima</a>
+                <a href="#">Biodiversidade</a>
+                <a href="#">Sustentabilidade</a>
+
+            </div>
+
+
+            <div class="rodape-redes">
+
+                <h3>REDES SOCIAIS</h3>
+
+                <a href="#">📷 Instagram</a>
+                <a href="#">📘 Facebook</a>
+                <a href="#">▶️ YouTube</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="rodape-final">
+            <p>© 2026 Eco Futuro. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
 
 </body>
 </html>
