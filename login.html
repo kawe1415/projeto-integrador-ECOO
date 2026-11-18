@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eco – Login</title>
-<link rel="stylesheet" href="Login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECO - Login</title>
+  <link rel="stylesheet" href="login.css">
 </head>
 <body>
 
-<main class="login">
-  <div class="login-logo"><span>🍃</span> ECO</div>
+  <main class="pagina-login">
 
-  <form class="login-card" action="#" method="post">
-    <div class="campo">
-      <label for="email">Email :</label>
-      <div class="entrada">
-        <span aria-hidden="true">✉</span>
-        <input id="email" type="email" placeholder="seu@email.com" required>
+    <a href="index.html" class="logo">
+      <span>🍃</span> ECO
+    </a>
+
+    <section class="login-card">
+      <div class="login-cabecalho">
+        <div class="icone-login">♧</div>
+        <h1>Bem-vindo!</h1>
+        <p>Entre na sua conta para continuar.</p>
       </div>
-    </div>
 
-    <div class="campo">
-      <label for="senha">Senha :</label>
-      <div class="entrada">
-        <span aria-hidden="true">🔒</span>
-        <input id="senha" type="password" placeholder="Digite sua senha" required>
-      </div>
-    </div>
+      <form action="#" method="post">
 
-    <button class="btn-login claro" type="submit">Entrar ➜</button>
-    <a class="btn-login escuro" href="cadastro.html">Criar conta</a>
-  </form>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          >
+        </div>
 
-  <a class="voltar" href="index.html" aria-label="Voltar">←</a>
-</main>
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Digite sua senha"
+            required
+          >
+        </div>
+
+        <button type="submit" class="botao-entrar">
+          Entrar
+        </button>
+
+        <p class="cadastro">
+          Ainda não tem uma conta?
+          <a href="cadastro.html">Cadastre-se</a>
+        </p>
+
+      </form>
+    </section>
+
+    <a href="index.html" class="voltar">← Voltar ao início</a>
+
+  </main>
 
 </body>
 </html>
