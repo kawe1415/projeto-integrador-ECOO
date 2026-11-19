@@ -1,4 +1,3 @@
-
 /* =====================================
    CONFIGURAÇÕES GERAIS
 ===================================== */
@@ -192,7 +191,7 @@ body {
     position: absolute;
     right: 10%;
     bottom: -50px;
-    color: rgba(255, 255, 255, 0.06);
+    color: rgba(255,255,255,0.06);
     font-size: 200px;
     font-weight: 900;
 }
@@ -346,7 +345,7 @@ body {
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 45px;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    border-bottom: 1px solid rgba(255,255,255,0.13);
 }
 
 /* LOGO */
@@ -402,7 +401,7 @@ body {
     transform: translateX(4px);
 }
 
-/* DIREITOS AUTORAIS */
+/* DIREITOS */
 
 .rodape-final {
     padding-top: 25px;
@@ -442,11 +441,6 @@ body {
     }
 
 }
-
-
-/* =====================================
-   RESPONSIVIDADE PARA CELULAR
-===================================== */
 
 @media (max-width: 650px) {
 
