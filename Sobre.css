@@ -1,6 +1,4 @@
-/* =====================================
-   CONFIGURAÇÕES GERAIS
-===================================== */
+/*CONFIGURAÇÕES GERAIS*/
 
 :root {
     --verde-escuro: #123b25;
@@ -31,13 +29,11 @@ body {
 }
 
 
-/* =====================================
-   CABEÇALHO
-===================================== */
+/*CABEÇALHO*/
 
 .cabecalho {
     width: 100%;
-    min-height: 70px;
+    min-height: 88px;
     padding: 0 7%;
     display: flex;
     align-items: center;
@@ -125,9 +121,7 @@ body {
 }
 
 
-/* =====================================
-   BANNER
-===================================== */
+/*BANNER*/
 
 .banner-sobre {
     min-height: 300px;
@@ -191,9 +185,7 @@ body {
 }
 
 
-/* =====================================
-   SEÇÕES
-===================================== */
+/*SEÇÕES*/
 
 .secao {
     max-width: 1200px;
@@ -230,9 +222,7 @@ body {
 }
 
 
-/* =====================================
-   MISSÃO, VISÃO E VALORES
-===================================== */
+/*MISSÃO, VISÃO E VALORES*/
 
 .equipe {
     display: grid;
@@ -279,9 +269,7 @@ body {
 }
 
 
-/* =====================================
-   NOSSA EQUIPE
-===================================== */
+/*NOSSA EQUIPE*/
 
 .secao-equipe {
     padding-top: 45px;
@@ -325,9 +313,7 @@ body {
 }
 
 
-/* =====================================
-   CHAMADA
-===================================== */
+/*CHAMADA*/
 
 .chamada {
     margin: 0 8% 75px;
@@ -390,9 +376,7 @@ body {
 }
 
 
-/* =====================================
-   RODAPÉ
-===================================== */
+/*RODAPÉ*/
 
 .rodape {
     padding: 60px 8% 25px;
@@ -468,9 +452,7 @@ body {
 }
 
 
-/* =====================================
-   RESPONSIVIDADE
-===================================== */
+/*RESPONSIVIDADE*/
 
 @media (max-width: 900px) {
 
@@ -498,7 +480,7 @@ body {
 
 @media (max-width: 650px) {
 
-    /* CABEÇALHO */
+    /*CABEÇALHO*/
 
     .cabecalho {
         min-height: 75px;
@@ -533,7 +515,7 @@ body {
         height: 36px;
     }
 
-    /* BANNER */
+    /*BANNER*/
 
     .banner-sobre {
         min-height: 250px;
@@ -553,7 +535,7 @@ body {
         right: 4%;
     }
 
-    /* SEÇÕES */
+    /*SEÇÕES*/
 
     .secao {
         padding: 45px 7% 25px;
@@ -581,7 +563,7 @@ body {
         height: 90px;
     }
 
-    /* CHAMADA */
+    /*CHAMADA*/
 
     .chamada {
         margin: 25px 6% 55px;
@@ -594,7 +576,7 @@ body {
         font-size: 25px;
     }
 
-    /* RODAPÉ */
+    /*RODAPÉ*/
 
     .rodape {
         padding: 45px 7% 22px;
