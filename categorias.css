@@ -1,6 +1,4 @@
-/* =====================================
-   CONFIGURAÇÕES GERAIS
-===================================== */
+/*CONFIGURAÇÕES GERAIS*/
 
 :root {
     --verde-escuro: #123b25;
@@ -31,9 +29,7 @@ body {
 }
 
 
-/* =====================================
-   CABEÇALHO
-===================================== */
+/*CABEÇALHO*/
 
 .cabecalho {
     width: 100%;
@@ -49,7 +45,7 @@ body {
     z-index: 10;
 }
 
-/* LOGO */
+/*LOGO*/
 
 .logo {
     display: flex;
@@ -67,7 +63,7 @@ body {
     object-fit: contain;
 }
 
-/* MENU */
+/*MENU*/
 
 .menu-pc {
     display: flex;
@@ -104,7 +100,7 @@ body {
     border-radius: 10px;
 }
 
-/* PESQUISA */
+/*PESQUISA*/
 
 .botao-pesquisa {
     width: 43px;
@@ -131,9 +127,7 @@ body {
 }
 
 
-/* =====================================
-   BANNER NOTÍCIAS
-===================================== */
+/*BANNER NOTÍCIAS*/
 
 .banner-noticias {
     min-height: 300px;
@@ -197,9 +191,7 @@ body {
 }
 
 
-/* =====================================
-   INTRODUÇÃO
-===================================== */
+/*INTRODUÇÃO*/
 
 .introducao-noticias {
     padding: 65px 9% 35px;
@@ -231,9 +223,7 @@ body {
 }
 
 
-/* =====================================
-   GRADE DE NOTÍCIAS
-===================================== */
+/*GRADE DE NOTÍCIAS*/
 
 .grade-noticias {
     max-width: 1200px;
@@ -245,7 +235,7 @@ body {
     gap: 27px;
 }
 
-/* CARDS */
+/*CARDS*/
 
 .card-noticia {
     display: flex;
@@ -264,7 +254,7 @@ body {
     box-shadow: 0 14px 32px rgba(18, 59, 37, 0.12);
 }
 
-/* IMAGENS */
+/*IMAGENS*/
 
 .foto {
     height: 245px;
@@ -284,7 +274,7 @@ body {
     transform: scale(1.05);
 }
 
-/* CONTEÚDO */
+/*CONTEÚDO*/
 
 .conteudo-noticia {
     padding: 27px 30px;
@@ -330,9 +320,7 @@ body {
 }
 
 
-/* =====================================
-   RODAPÉ
-===================================== */
+/*RODAPÉ*/
 
 .rodape {
     padding: 60px 8% 25px;
@@ -348,7 +336,7 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.13);
 }
 
-/* LOGO */
+/*LOGO*/
 
 .rodape-logo h2 {
     display: flex;
@@ -374,7 +362,7 @@ body {
     line-height: 1.8;
 }
 
-/* LINKS */
+/*LINKS*/
 
 .rodape-links h3,
 .rodape-redes h3 {
@@ -401,7 +389,7 @@ body {
     transform: translateX(4px);
 }
 
-/* DIREITOS */
+/*DIREITOS*/
 
 .rodape-final {
     padding-top: 25px;
@@ -414,9 +402,7 @@ body {
 }
 
 
-/* =====================================
-   RESPONSIVIDADE
-===================================== */
+/*RESPONSIVIDADE*/
 
 @media (max-width: 900px) {
 
@@ -444,7 +430,7 @@ body {
 
 @media (max-width: 650px) {
 
-    /* CABEÇALHO */
+    /*CABEÇALHO*/
 
     .cabecalho {
         min-height: 75px;
@@ -479,7 +465,7 @@ body {
         height: 36px;
     }
 
-    /* BANNER */
+    /*BANNER*/
 
     .banner-noticias {
         min-height: 250px;
@@ -499,7 +485,7 @@ body {
         right: 4%;
     }
 
-    /* INTRODUÇÃO */
+    /*INTRODUÇÃO*/
 
     .introducao-noticias {
         padding: 45px 7% 20px;
@@ -512,7 +498,7 @@ body {
         font-size: 24px;
     }
 
-    /* NOTÍCIAS */
+    /*NOTÍCIAS*/
 
     .grade-noticias {
         grid-template-columns: 1fr;
@@ -536,7 +522,7 @@ body {
         font-size: 13px;
     }
 
-    /* RODAPÉ */
+    /*RODAPÉ*/
 
     .rodape {
         padding: 45px 7% 22px;

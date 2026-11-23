@@ -1,7 +1,5 @@
 
-/* =====================================
-   CONFIGURAÇÕES GERAIS
-===================================== */
+/*CONFIGURAÇÕES GERAIS*/
 
 :root {
     --verde-escuro: #123b25;
@@ -32,9 +30,7 @@ body {
 }
 
 
-/* =====================================
-   CABEÇALHO
-===================================== */
+/*CABEÇALHO*/
 
 .cabecalho {
     width: 100%;
@@ -50,7 +46,7 @@ body {
     z-index: 10;
 }
 
-/* LOGO */
+/*LOGO*/
 
 .logo {
     display: flex;
@@ -68,7 +64,7 @@ body {
     object-fit: contain;
 }
 
-/* MENU */
+/*MENU*/
 
 .menu-pc {
     display: flex;
@@ -105,7 +101,7 @@ body {
     border-radius: 10px;
 }
 
-/* PESQUISA */
+/*PESQUISA*/
 
 .botao-pesquisa {
     width: 43px;
@@ -132,9 +128,7 @@ body {
 }
 
 
-/* =====================================
-   BANNER CLIMA
-===================================== */
+/*BANNER CLIMA*/
 
 .banner-clima {
     min-height: 300px;
@@ -198,9 +192,7 @@ body {
 }
 
 
-/* =====================================
-   INTRODUÇÃO
-===================================== */
+/*INTRODUÇÃO*/
 
 .introducao-clima {
     padding: 65px 9% 35px;
@@ -232,9 +224,7 @@ body {
 }
 
 
-/* =====================================
-   LISTA DE NOTÍCIAS
-===================================== */
+/*LISTA DE NOTÍCIAS*/
 
 .lista-clima {
     max-width: 1200px;
@@ -262,7 +252,7 @@ body {
     box-shadow: 0 14px 32px rgba(18, 59, 37, 0.12);
 }
 
-/* IMAGENS */
+/*IMAGENS*/
 
 .imagem-clima {
     min-height: 250px;
@@ -283,7 +273,7 @@ body {
     transform: scale(1.05);
 }
 
-/* TEXTOS */
+/*TEXTOS*/
 
 .conteudo-clima {
     padding: 35px 38px;
@@ -326,9 +316,7 @@ body {
 }
 
 
-/* =====================================
-   PAGINAÇÃO
-===================================== */
+/*PAGINAÇÃO*/
 
 .paginacao {
     display: flex;
@@ -384,7 +372,7 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.13);
 }
 
-/* LOGO DO RODAPÉ */
+/*LOGO DO RODAPÉ*/
 
 .rodape-logo h2 {
     display: flex;
@@ -410,7 +398,7 @@ body {
     line-height: 1.8;
 }
 
-/* LINKS */
+/*LINKS*/
 
 .rodape-links h3,
 .rodape-redes h3 {
@@ -437,7 +425,7 @@ body {
     transform: translateX(4px);
 }
 
-/* DIREITOS AUTORAIS */
+/*DIREITOS AUTORAIS*/
 
 .rodape-final {
     padding-top: 25px;
@@ -477,7 +465,7 @@ body {
 
 @media (max-width: 650px) {
 
-    /* CABEÇALHO */
+    /*CABEÇALHO*/
 
     .cabecalho {
         min-height: 75px;
@@ -512,7 +500,7 @@ body {
         height: 36px;
     }
 
-    /* BANNER */
+    /*BANNER*/
 
     .banner-clima {
         min-height: 250px;
@@ -532,7 +520,7 @@ body {
         right: 4%;
     }
 
-    /* INTRODUÇÃO */
+    /*INTRODUÇÃO*/
 
     .introducao-clima {
         padding: 45px 7% 20px;
@@ -545,7 +533,7 @@ body {
         font-size: 24px;
     }
 
-    /* NOTÍCIAS */
+    /*NOTÍCIAS*/
 
     .lista-clima {
         padding: 25px 6% 55px;
@@ -574,7 +562,7 @@ body {
         font-size: 13px;
     }
 
-    /* PAGINAÇÃO */
+    /*PAGINAÇÃO*/
 
     .paginacao {
         gap: 6px;
@@ -586,7 +574,7 @@ body {
         height: 34px;
     }
 
-    /* RODAPÉ */
+    /*RODAPÉ*/
 
     .rodape {
         padding: 45px 7% 22px;

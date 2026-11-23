@@ -1,7 +1,5 @@
 
-/* =====================================
-   ECO - IDENTIDADE VISUAL
-===================================== */
+/*ECO - IDENTIDADE VISUAL*/
 
 :root {
     --verde-escuro: #123b25;
@@ -31,9 +29,7 @@ body {
     line-height: 1.6;
 }
 
-/* =====================================
-   CABEÇALHO
-===================================== */
+/*CABEÇALHO*/
 
 header {
     width: 100%;
@@ -49,7 +45,7 @@ header {
     z-index: 10;
 }
 
-/* LOGO */
+/*LOGO*/
 
 .logo {
     display: flex;
@@ -67,7 +63,7 @@ header {
     object-fit: contain;
 }
 
-/* MENU */
+/*MENU*/
 
 .menu-pc {
     display: flex;
@@ -104,7 +100,7 @@ header {
     border-radius: 10px;
 }
 
-/* BOTÕES DO CABEÇALHO */
+/*BOTÕES DO CABEÇALHO*/
 
 header button {
     border: none;
@@ -137,9 +133,7 @@ header button:last-child img {
     object-fit: contain;
 }
 
-/* =====================================
-   NOSSA HISTÓRIA
-===================================== */
+/*NOSSA HISTÓRIA*/
 
 .historia {
     padding: 65px 9%;
@@ -184,9 +178,7 @@ header button:last-child img {
     padding-left: 5px;
 }
 
-/* =====================================
-   BANNER PRINCIPAL
-===================================== */
+/*BANNER PRINCIPAL*/
 
 .hero {
     min-height: 370px;
@@ -207,7 +199,7 @@ header button:last-child img {
         #83c94b 100%);
 }
 
-/* CÍRCULOS DECORATIVOS */
+/*CÍRCULOS DECORATIVOS*/
 
 .hero::after {
     content: "";
@@ -259,9 +251,7 @@ header button:last-child img {
     z-index: 1;
 }
 
-/* =====================================
-   ÁREA DE NOTÍCIAS
-===================================== */
+/*ÁREA DE NOTÍCIAS*/
 
 .noticias {
     max-width: 1250px;
@@ -293,7 +283,7 @@ header button:last-child img {
     text-decoration: none;
 }
 
-/* IMAGENS DAS NOTÍCIAS */
+/*IMAGENS DAS NOTÍCIAS*/
 
 .foto {
     width: 100%;
@@ -314,7 +304,7 @@ header button:last-child img {
     transform: scale(1.05);
 }
 
-/* CONTEÚDO DOS CARDS */
+/*CONTEÚDO DOS CARDS*/
 
 .noticia > a > div:last-child {
     padding: 27px 29px 30px;
@@ -363,9 +353,7 @@ header button:last-child img {
     color: var(--verde);
 }
 
-/* =====================================
-   CHAMADA FINAL
-===================================== */
+/*CHAMADA FINAL*/
 
 .chamada {
     margin: 20px 7% 80px;
@@ -438,9 +426,7 @@ header button:last-child img {
     color: var(--verde-escuro);
 }
 
-/* =====================================
-   RODAPÉ
-===================================== */
+/*RODAPÉ*/
 
 footer {
     padding: 60px 8% 25px;
@@ -500,7 +486,7 @@ footer .logo img {
     padding-left: 5px;
 }
 
-/* REDES SOCIAIS */
+/*REDES SOCIAIS*/
 
 .sociais {
     display: flex;
@@ -531,7 +517,7 @@ footer .logo img {
     object-fit: contain;
 }
 
-/* CAMPO DE E-MAIL */
+/*CAMPO DE E-MAIL*/
 
 .rotulo {
     display: block;
@@ -570,9 +556,7 @@ footer input:focus {
     font-size: 12px;
 }
 
-/* =====================================
-   RESPONSIVIDADE
-===================================== */
+/*RESPONSIVIDADE*/
 
 @media (max-width: 900px) {
     header {
